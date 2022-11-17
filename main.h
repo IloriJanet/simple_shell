@@ -12,7 +12,6 @@
 #include <signal.h>
 #include <limits.h>
 #include <string.h>
-#include <cstring>
 
 #define BUFSIZE 1024
 #define TOK_BUFSIZE 128

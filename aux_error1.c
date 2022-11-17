@@ -49,7 +49,6 @@ char *error_get_cd(data_shell *datash)
 	int length, len_id;
 	char *error, *ver_str, *msg;
 
-	ver_str = aux_itoa(datash->counter);
 	if (datash->args[1][0] == '-')
 	{
 		msg = ": Illegal option ";
@@ -89,7 +88,6 @@ char *error_not_found(data_shell *datash)
 	char *error;
 	char *ver_str;
 
-	ver_str = aux_itoa(datash->counter);
 	length = strlen(datash->av[0]) + strlen(ver_str);
 	length += strlen(datash->args[0]) + 16;
 	error = malloc(sizeof(char) * (length + 1));
@@ -122,7 +120,6 @@ char *error_exit_shell(data_shell *datash)
 	char *error;
 	char *ver_str;
 
-	ver_str = aux_itoa(datash->counter);
 	length = strlen(datash->av[0]) + strlen(ver_str);
 	length += strlen(datash->args[0]) + strlen(datash->args[1]) + 23;
 	error = malloc(sizeof(char) * (length + 1));
